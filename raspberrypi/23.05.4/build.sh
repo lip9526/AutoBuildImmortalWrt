@@ -22,15 +22,24 @@ PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
-PACKAGES="$PACKAGES luci-proto-wireguard"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 # 增加几个必备组件 方便用户安装iStore
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+# 增加几个wireguard组件
+PACKAGES="$PACKAGES luci-proto-wireguard"
 PACKAGES="$PACKAGES wireguard-tools"
 PACKAGES="$PACKAGES kmod-wireguard"
+# 增加几个USB网卡组件
+PACKAGES="$PACKAGES kmod-usb-net-rndis"
+PACKAGES="$PACKAGES usb-modeswitch"
+PACKAGES="$PACKAGES usbutils"
+PACKAGES="$PACKAGES kmod-libphy"
+PACKAGES="$PACKAGES kmod-mii"
+PACKAGES="$PACKAGES kmod-usb-net-asix"
+PACKAGES="$PACKAGES kmod-usb-net-asix-ax88179"
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
