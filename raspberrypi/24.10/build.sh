@@ -22,6 +22,10 @@ PACKAGES="$PACKAGES kmod-usb-net"
 PACKAGES="$PACKAGES kmod-usb-net-rndis"
 PACKAGES="$PACKAGES kmod-usb-net-cdc-ether"
 PACKAGES="$PACKAGES usbutils"
+PACKAGES="$PACKAGES kmod-usb-net-rtl8152"
+PACKAGES="$PACKAGES luci-proto-wireguard"
+PACKAGES="$PACKAGES kmod-wireguard"
+PACKAGES="$PACKAGES wireguard-tools"
 
 #24.10
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
